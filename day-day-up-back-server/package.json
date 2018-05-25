@@ -1,0 +1,27 @@
+{
+  "name": "day-day-up-back-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "lodash": "^4.17.10",
+    "md5": "^2.2.1",
+    "morgan": "~1.9.0",
+    "ora": "^2.1.0",
+    "request": "^2.86.0",
+    "sequelize": "^4.37.7"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "express-session": "^1.15.6",
+    "mysql2": "^1.5.3"
+  }
+}

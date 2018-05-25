@@ -1,0 +1,85 @@
+#!/usr/bin/env node
+
+
+const chalk = require('chalk')
+const http = require('http');
+const {EventEmitter} = require('events')
+
+// const debug = require('debug')('day-day-up-back-server:server');
+
+const app = require('../app');
+const config = require('../config/server');
+
+class ServerClient extends EventEmitter{
+  constructor(App,config){
+    super();
+    this.App = App;
+    this.port = this.normalizePort(config.port || '3000')
+
+      this.initApp();
+
+    this.initServer();
+  }
+
+  initApp(){
+      this.App.set('port', this.port);
+  }
+
+  initServer(){
+      this.Server = http.createServer(this.App);
+      this.Server.listen(this.port);
+      this.Server.on('error', this.onError.bind(this));
+      this.Server.on('listening', this.onListening.bind(this));
+  }
+
+    onError(error) {
+        if (error.syscall !== 'listen') {
+            throw error;
+        }
+
+        var bind = typeof this.port === 'string'
+            ? 'Pipe ' + this.port
+            : 'Port ' + this.port;
+
+        switch (error.code) {
+            case 'EACCES':
+                console.error(bind + ' requires elevated privileges');
+                process.exit(1);
+                break;
+            case 'EADDRINUSE':
+                console.error(bind + ' is already in use');
+                process.exit(1);
+                break;
+            default:
+                throw error;
+        }
+        this.emit('error')
+    }
+
+    onListening() {
+        this.info(`server start.....`)
+        this.emit('start')
+    }
+
+    info(msg){
+      console.log(chalk.yellow(msg));
+    }
+
+    normalizePort(val) {
+        var port = parseInt(val, 10);
+
+        if (isNaN(port)) {
+            // named pipe
+            return val;
+        }
+
+        if (port >= 0) {
+            // port number
+            return port;
+        }
+
+        return false;
+    }
+}
+
+module.exports =  new ServerClient(app,config)
