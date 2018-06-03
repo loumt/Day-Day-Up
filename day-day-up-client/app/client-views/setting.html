@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../resources/styles/setting.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.5/css/bootstrap.min.css"/>
+    <title>Settings</title>
+</head>
+<body>
+<div id="toolbar" class="toolbar">
+    <i class="glyphicon glyphicon-cog" style="top: 3px;"></i>&nbsp;<span>设置</span>
+</div>
+<form role="form" class="form-horizontal setting-form">
+    <div class="form-group">
+        <label class="col-md-3 col-sm-3 col-xs-3 control-label">服务地址：</label>
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <input type="text" class="form-control" id="server_host" name="server_host" placeholder="用户名"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 col-sm-3 col-xs-3 control-label">服务端口：</label>
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <input type="text" class="form-control" id="server_port" name="server_port" placeholder="服务端口">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 col-sm-3 col-xs-3 control-label">服务协议：</label>
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <input type="text" class="form-control" id="server_protocol" name="server_protocol" placeholder="服务协议">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 col-sm-3 col-xs-3 control-label">服务名称：</label>
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <input type="text" class="form-control" id="server_application" name="server_application"
+                   placeholder="服务名称">
+        </div>
+    </div>
+    <div class="form-group" style="padding-top: 25px;">
+        <div class="col-md-4  col-sm-4 col-xs-offset-2 col-xs-3">
+            <button class="btn btn-block" onClick="hideSettingWindow()">关闭</button>
+        </div>
+        <div class="col-md-offset-3 col-md-4  col-sm-offset-3 col-sm-4 col-xs-offset-2 col-xs-3">
+            <button name="submit-btn" class="btn btn-primary btn-block" onClick="saveConfig()">提交</button>
+        </div>
+    </div>
+</form>
+
+
+<script>
+//    const AppConfig = require('./../configuration');
+//    const {ipcRenderer} = require('electron');
+//    const CONFIG_ELE_IDS = [
+//        'server_host',
+//        'server_port',
+//        'server_protocol',
+//        'server_application'
+//    ];
+//
+//    function $(id) {
+//        return document.getElementById(id);
+//    }
+//
+//    function getConfig(key) {
+//        return AppConfig.readSettings(key);
+//    }
+//    function setConfig(configs) {
+//        return AppConfig.saveSettings(configs);
+//    }
+//    function initSetting() {
+//        CONFIG_ELE_IDS.forEach((item) => {
+//            $(item).value = getConfig(item);
+//        })
+//    }
+//    function hideSettingWindow(options) {
+//        if (ipcRenderer) {
+//            ipcRenderer.send('close-setting-window')
+//            if (options.reload) {
+//                ipcRenderer.send('reload-client-window')
+//            }
+//        } else {
+//            alert('Please use ESC to exit!');
+//        }
+//    }
+//    //btn
+//    function saveConfig() {
+//        let configs = [];
+//        CONFIG_ELE_IDS.forEach((item) => {
+//            configs.push({key: item, value: $(item).value})
+//        })
+//        setConfig(configs);
+//        hideSettingWindow({reload: true});
+//    }
+//
+//    initSetting();
+</script>
+</body>
+
+</html>

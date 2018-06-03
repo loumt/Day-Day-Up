@@ -1,0 +1,21 @@
+{
+  "current-version": "v1.0.1",
+  "v1.0.1": {
+    "version": "v1.0.1",
+    "publisher": "loumt@sanlogic.com",
+    "detail": "This is a test description!",
+    "date": "2018-59-03 23:06:54",
+    "files": {
+      "static": [
+        "day\\css\\app.css",
+        "day\\css\\app.css.map",
+        "day\\js\\app.js",
+        "day\\js\\app.js.map",
+        "day\\js\\manifest.js",
+        "day\\js\\manifest.js.map",
+        "day\\js\\vendor.js",
+        "day\\js\\vendor.js.map"
+      ]
+    }
+  }
+}

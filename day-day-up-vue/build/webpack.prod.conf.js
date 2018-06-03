@@ -26,9 +26,9 @@ const webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     // filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    filename: utils.assetsPath(`js/[name].${pck.version}.js`),
+    filename: utils.assetsPath(`js/[name].js`),
     // chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
-    chunkFilename: utils.assetsPath(`js/[id].${pck.version}.js`)
+    chunkFilename: utils.assetsPath(`js/[id].js`)
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
@@ -47,7 +47,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // extract css into its own file
     new ExtractTextPlugin({
       // filename: utils.assetsPath('css/[name].[contenthash].css'),
-      filename: utils.assetsPath(`css/[name].${pck.version}.css`),
+      filename: utils.assetsPath(`css/[name].css`),
       // Setting the following option to `false` will not extract CSS from codesplit chunks.
       // Their CSS will instead be inserted dynamically with style-loader when the codesplit chunk has been loaded by webpack.
       // It's currently set to `true` because we are seeing that sourcemaps are included in the codesplit bundle as well when it's `false`,

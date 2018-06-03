@@ -1,31 +1,30 @@
-const {BrowserWindow, app, ipcMain, dialog, autoUpdater,Notification} = require('electron');
+const {BrowserWindow, app, ipcMain} = require('electron');
 const path = require('path')
 const MainWindow = require('./windows/MainWindow');
+const SettingWindow = require('./windows/SettingWindow');
+const UpdateWindow = require('./windows/UpdateWindow');
+const TrayWindow = require('./windows/TrayWindow');
 const pck = require('./../package.json');
+const Update =require('./tools/Update')
 
 class Main {
     constructor() {
         this.mainWindow = null;
-        this.message = {
-            error: '检查更新出错',
-            checking: '正在检查更新……',
-            updateAva: '下载更新成功',
-            updateNotAva: '现在使用的就是最新版本，不用更新',
-            downloaded: '最新版本已下载，将在重启程序后更新'
-        };
     }
 
     init() {
         this.initApp();
         this.initIPC();
-        this.startupEventHandle();
+        // this.initUpdateEvent();
     }
 
     initApp() {
         app.setAppUserModelId(pck.appId);//你应该在自己的应用中使用 app.setAppUserModelId API 方法设置相同的 API和ID，不然 Windows 将不能正确地把你的应用固定在任务栏上。
         app.on('ready', () => {
             this.createMainWindow();
-            this.initUpdates();
+            this.createSettingWindow();
+            this.createUpdateWindow();
+            this.createTrap();
         });
         app.on('activate', () => {
             if (this.mainWindow == null) {
@@ -37,116 +36,82 @@ class Main {
     };
 
     initIPC(){
-        ipcMain.on('send-notification',(e,msg)=>{
-            console.log('send notification');
-            let notification = new Notification({
-                title:'Title',
-                body:'This is a notification!',
+        this.initVersionIpc();
+    }
+
+    /**
+     * 初始化version ipc
+     */
+    initVersionIpc(){
+        ipcMain.on('current-version',(e)=>{
+            e.returnValue = Update.getCurrentVersion()
+        })
+        ipcMain.on('lastest-version',(e)=>{
+            Update.getLastestVersion().then((lastestVersion)=>{
+                e.returnValue = lastestVersion
+            }).catch(e=>{
+                e.returnValue = '获取失败'
             })
-            notification.show();
+        })
+        ipcMain.on('version',(e)=>{
+            Update.getVersionInfo().then((versionInfo)=>{
+                console.dir(versionInfo)
+                e.returnValue = versionInfo
+            }).catch(e=>{
+                e.returnValue = '获取失败'
+            })
+        })
+        ipcMain.on('update',(e)=>{
+            let update = Update.getInstance();
+            update.on('out',(msg)=>{
+                console.log(msg);
+            })
+            update.on('error',(msg)=>{
+                console.log(msg);
+            })
+            update.on('success',(e)=>{
+                console.log('success');
+            })
+            //文件总数
+            update.on('total',(total)=>{
+                console.log(`Total : ${total}`);
+            })
+            //文件下载完成时，向前台发送下载进度百分比
+            update.on('end',()=>{
+                BrowserWindow.getFocusedWindow().webContents.send('update-progress',update.getUpdatePercent())
+            })
+
+            update.update();
         })
     }
+
+
+    // initUpdateEvent(){
+    //     Update.on('server-versions',(versions)=>{
+    //         BrowserWindow.getFocusedWindow().webContents.send('server-versions',versions)
+    //     })
+    //     Update.on('error',(msg)=>{
+    //         BrowserWindow.getFocusedWindow().webContents.send('error',msg)
+    //     })
+    //     Update.on('local-version',(lv)=>{
+    //         BrowserWindow.getFocusedWindow().webContents.send('local-version',lv)
+    //     })
+    // }
 
     createMainWindow() {
         this.mainWindow = new MainWindow();
     }
 
-    startupEventHandle() {
-        if (require('electron-squirrel-startup')) {
-            console.log('electron-squirrel-startup....');
-            return;
-        }
-
-        var handleStartupEvent = function () {
-            if (process.platform !== 'win32') {
-                console.log('Not a win env!!!');
-                return false;
-            }
-            var squirrelCommand = process.argv[1];
-            switch (squirrelCommand) {
-                case '--squirrel-install':
-                case '--squirrel-updated':
-                    install();
-                    return true;
-                case '--squirrel-uninstall':
-                    uninstall();
-                    app.quit();
-                    return true;
-                case '--squirrel-obsolete':
-                    app.quit();
-                    return true;
-            }
-
-            // 安装
-            function install() {
-                var cp = require('child_process');
-                var updateDotExe = path.resolve(path.dirname(process.execPath), '..', 'update.exe');
-                var target = path.basename(process.execPath);
-                var child = cp.spawn(updateDotExe, ["--createShortcut", target], {detached: true});
-                child.on('close', function (code) {
-                    app.quit();
-                });
-            }
-
-            // 卸载
-            function uninstall() {
-                var cp = require('child_process');
-                var updateDotExe = path.resolve(path.dirname(process.execPath), '..', 'update.exe');
-                var target = path.basename(process.execPath);
-                var child = cp.spawn(updateDotExe, ["--removeShortcut", target], {detached: true});
-                child.on('close', function (code) {
-                    app.quit();
-                });
-            }
-        };
-        if (handleStartupEvent()) {
-            return;
-        }
+    createSettingWindow() {
+        this.settingWindow = new SettingWindow();
     }
 
-    initUpdates() {
-        let message = {
-            error: '检查更新出错',
-            checking: '正在检查更新……',
-            updateAva: '检测到新版本，正在下载……',
-            updateNotAva: '现在使用的就是最新版本，不用更新',
-        };
-        const server = 'server';
-        const feed = `${server}/update/${process.platform}/${app.getVersion()}`;
-        autoUpdater.setFeedURL(feed);
-
-        autoUpdater.on('error', function (error) {
-            this.sendUpdateMessage(message.error)
-        });
-        autoUpdater.on('checking-for-update', function () {
-            this.sendUpdateMessage(message.checking)
-        });
-        autoUpdater.on('update-available', function (info) {
-            this.sendUpdateMessage(message.updateAva)
-        });
-        autoUpdater.on('update-not-available', function (info) {
-            this.sendUpdateMessage(message.updateNotAva)
-        });
-        // 更新下载进度事件
-        autoUpdater.on('download-progress', function (progressObj) {
-            this.sendUpdateMessage('downloadProgress', progressObj)
-        })
-        autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName, releaseDate, updateUrl, quitAndUpdate) => {
-            ipcMain.on('isUpdateNow', (e, arg) => {
-                console.log(arguments);
-                console.log("开始更新");
-                //some code here to handle event
-                autoUpdater.quitAndInstall();
-            });
-            this.sendUpdateMessage('isUpdateNow')
-        });
-        ipcMain.on("checkForUpdate", () => {
-            //执行自动更新检查
-            autoUpdater.checkForUpdates();
-        })
+    createUpdateWindow() {
+        this.updateWindow = new UpdateWindow();
     }
-    sendUpdateMessage(text) {
-        BrowserWindow.getFocusedWebContents().send('message', text)
+
+    createTrap() {
+        this.tray = new TrayWindow(this.mainWindow, this.settingWindow,this.updateWindow);
     }
 }
 

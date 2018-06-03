@@ -10,27 +10,25 @@ const {EventEmitter} = require('events')
 const app = require('../app');
 const config = require('../config/server');
 
-class ServerClient extends EventEmitter{
-  constructor(App,config){
-    super();
-    this.App = App;
-    this.port = this.normalizePort(config.port || '3000')
+class ServerClient extends EventEmitter {
+    constructor(App, config) {
+        super();
+        this.App = App;
+        this.port = this.normalizePort(config.port || '3000')
+        this.initApp();
+        this.initServer();
+    }
 
-      this.initApp();
+    initApp() {
+        this.App.set('port', this.port);
+    }
 
-    this.initServer();
-  }
-
-  initApp(){
-      this.App.set('port', this.port);
-  }
-
-  initServer(){
-      this.Server = http.createServer(this.App);
-      this.Server.listen(this.port);
-      this.Server.on('error', this.onError.bind(this));
-      this.Server.on('listening', this.onListening.bind(this));
-  }
+    initServer() {
+        this.Server = http.createServer(this.App);
+        this.Server.listen(this.port);
+        this.Server.on('error', this.onError.bind(this));
+        this.Server.on('listening', this.onListening.bind(this));
+    }
 
     onError(error) {
         if (error.syscall !== 'listen') {
@@ -61,8 +59,8 @@ class ServerClient extends EventEmitter{
         this.emit('start')
     }
 
-    info(msg){
-      console.log(chalk.yellow(msg));
+    info(msg) {
+        console.log(chalk.yellow(msg));
     }
 
     normalizePort(val) {
@@ -82,4 +80,4 @@ class ServerClient extends EventEmitter{
     }
 }
 
-module.exports =  new ServerClient(app,config)
+module.exports = new ServerClient(app, config)

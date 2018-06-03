@@ -1,13 +1,17 @@
 {
   "name": "day-day-up-back-server",
-  "version": "0.0.0",
+  "version": "v1.0.5",
+  "author": "loumt@sanlogic.com",
+  "description": "This is a test description!",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build": "node ./versions/build.js --d=day,app,*.css,*.js,*.png,*.jpg --v=1.0.1"
   },
   "dependencies": {
     "async": "^2.6.0",
     "cookie-parser": "~1.4.3",
+    "dateformat": "^3.0.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
@@ -17,7 +21,9 @@
     "morgan": "~1.9.0",
     "ora": "^2.1.0",
     "request": "^2.86.0",
-    "sequelize": "^4.37.7"
+    "rimraf": "^2.6.2",
+    "sequelize": "^4.37.7",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "chalk": "^2.4.1",

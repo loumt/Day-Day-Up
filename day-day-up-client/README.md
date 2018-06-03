@@ -1,5 +1,9 @@
 
 
+### npm install或者cnpm install
+
+### npm start
+
 ### npm run pck
 ```
 打包成源码模式

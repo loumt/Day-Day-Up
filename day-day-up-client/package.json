@@ -8,7 +8,7 @@
   "license": "ISC",
   "main": "app/main.js",
   "scripts": {
-    "start": "electron ./app/main.js",
+    "start": "cross-env NODE_ENV=development electron ./app/main.js",
     "pck-asar": "electron-packager . %npm_package_name% --platform=win32 --arch=x64 --electron-version=1.7.6  --app-version=%npm_package_version% --asar --overwrite --icon=./app/assets/main-client-icon-16.ico --out=./dist --ignore=./.idea",
     "pck": "electron-packager . %npm_package_name% --platform=win32 --arch=x64 --electron-version=1.7.6  --app-version=%npm_package_version% --overwrite --icon=./app/assets/main-client-icon-16.ico --out=./dist --ignore=./.idea"
   },
@@ -17,13 +17,17 @@
     "test"
   ],
   "devDependencies": {
+    "cross-env": "^5.1.6",
     "electron-builder": "^20.11.1",
     "electron-is-dev": "^0.3.0",
-    "electron-packager": "^11.1.0"
+    "electron-packager": "^11.1.0",
+    "nconf": "^0.10.0"
   },
   "dependencies": {
-    "cross-env": "^5.1.4",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
     "electron": "^2.0.0",
+    "electron-localshortcut": "^3.1.0",
     "electron-squirrel-startup": "^1.0.0",
     "lodash": "^4.17.10"
   }

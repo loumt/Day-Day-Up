@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+
+<div>
+    <label>当前版本:</label><span id="current-version"></span>
+    <hr>
+    <label>最新版本:</label><span id="lastest-version"></span>
+    <hr>
+    <button id="update-btn" disabled="disabled">更新</button>
+</div>
+<script src="../resources/jquery.js"></script>
+<script>
+    const {ipcRenderer} = require('electron')
+
+    $(function(){
+        //显示当前版本
+//        let currentVersion = ipcRenderer.sendSync('current-version');
+//        $('#current-version').text(currentVersion)
+        //显示最新版本
+//        let lastestVersion = ipcRenderer.sendSync('lastest-version');
+//        $('#lastest-version').text(lastestVersion)
+
+        //显示版本信息
+        setUpdateState(ipcRenderer.sendSync('version'));
+
+        //更新按钮
+        $('#update-btn').on('click',()=>{
+            ipcRenderer.send('update');
+        });
+
+        ipcRenderer.on('update-progress',(e,number)=>{
+            console.log('完成进度:'+number);
+        })
+    })
+
+    /**
+     * 设置版本信息
+     * @param versionInfo
+     */
+    function setUpdateState(versionInfo){
+        $('#lastest-version').text(versionInfo['lastestVersion'])
+        $('#current-version').text(versionInfo['currentVersion'])
+        if(versionInfo['isUpdate']){
+            $('#update-btn').removeAttr('disabled');
+        }
+    }
+
+    ipcRenderer.on("message", (event, text) => {
+        console.log(arguments);
+    });
+    ipcRenderer.on("downloadProgress", (event, progressObj)=> {
+        console.log(progressObj);
+    });
+    ipcRenderer.on("isUpdateNow", () => {
+        ipcRenderer.send("isUpdateNow");
+    });
+    ipcRenderer.on("local-version", (event,version) => {
+        $('#local-version').html(`${version}`)
+    });
+    ipcRenderer.on("server-versions",(event,versions)=>{
+        if(versions) {
+            $('#versions').empty();
+            for(let item in versions){
+                $('#versions').append(`<option vsn-date='${item["date"]}' vsn-publisher='${item["publisher"]}'>${item}</option>`)
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

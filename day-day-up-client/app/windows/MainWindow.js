@@ -1,5 +1,6 @@
 "use strict";
 const { app, BrowserWindow } = require('electron');
+const electronLocalShortcut = require('electron-localshortcut');
 const Common = require('./../common');
 const path = require('path')
 
@@ -9,18 +10,19 @@ class MainWindow {
         this.createWindow();
         this.initWindowEvents();
         this.initWindowWebContent();
+        this.initClientWindowShortCut();
     }
 
 
     createWindow() {
         this.mainWindow = new BrowserWindow({
             title: Common.TITLE,
-            width:Common.WINDOW.width,
-            height:Common.WINDOW.height,
+            width:Common.MAIN_WINDOW.width,
+            height:Common.MAIN_WINDOW.height,
             resizable: true,
             center: true,
-            show: Common.WINDOW.show,
-            frame: Common.WINDOW.frame,
+            show: Common.MAIN_WINDOW.show,
+            frame: Common.MAIN_WINDOW.frame,
             autoHideMenuBar: true,
             icon: path.join(__dirname, './../assets/main-client-icon-32.ico'),
             titleBarStyle: 'hidden-inset',
@@ -50,7 +52,7 @@ class MainWindow {
 
     initWindowWebContent() {
         // this.mainWindow.webContents.setUserAgent(Common.USER_AGENT);
-        this.loadURL(`file://${path.join(__dirname, './../views/index.html')}`)
+        this.loadURL(`file://${path.join(__dirname, './../../views/day.html')}`)
         if (Common.DEBUG_MODE) {
             this.mainWindow.webContents.openDevTools();
         }
@@ -66,8 +68,18 @@ class MainWindow {
         });
     }
 
+    initClientWindowShortCut() {
+        electronLocalShortcut.register(this.mainWindow, 'Esc', () => {
+            this.mainWindow.close();
+        });
+    }
+
     getWindow(){
         return this.mainWindow;
+    }
+
+    close(){
+        app.quit(0)
     }
 }
 
