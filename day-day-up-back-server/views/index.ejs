@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>cloudapp-web</title>
+
+</head>
+
+<body>
+<div id=app>1111111</div>
+<button onclick="test()">测试</button>
+<script src="https://cdn.bootcss.com/jquery/3.0.0-rc1/jquery.min.js"></script>
+<script>
+    console.log($);
+
+    function test() {
+        $.ajax({
+            url: '/api/test',
+            type: 'post',
+            data: {
+                update:JSON.stringify({id: 3, state: "CLOSE"})
+            },
+//            data:{update:JSON.stringify([
+//                {
+//                    id:2,
+//                    state:'CLOSE'
+//                },
+//                {
+//                    id:3,
+//                    state:'OPEN'
+//                }
+//            ])},
+            dataType: 'json',
+            success: (result) => {
+                console.log(result);
+            }
+        })
+    }
+
+</script>
+</body>
+
+</html>

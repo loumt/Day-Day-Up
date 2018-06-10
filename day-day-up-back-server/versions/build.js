@@ -29,15 +29,9 @@ const defaultConfig = {
 }
 
 
-class OutInfo {
-    constructor() {
-    }
-
-}
-
-
-class Build {
+class Build extends EventEmitter{
     constructor(options) {
+        super();
         this.options = options;
         this.originStaticPath = options['originStaticPath'];
         this.outPutStaticPath = options['outPutStaticPath'];
