@@ -3,6 +3,7 @@
 
 const chalk = require('chalk')
 const http = require('http');
+const Markdown  = require('express2md')
 const {EventEmitter} = require('events')
 
 // const debug = require('debug')('day-day-up-back-server:server');
@@ -17,6 +18,7 @@ class ServerClient extends EventEmitter {
         this.port = this.normalizePort(config.port || '3000')
         this.initApp();
         this.initServer();
+        this.initMD();
     }
 
     initApp() {
@@ -28,6 +30,12 @@ class ServerClient extends EventEmitter {
         this.Server.listen(this.port);
         this.Server.on('error', this.onError.bind(this));
         this.Server.on('listening', this.onListening.bind(this));
+    }
+
+    initMD(){
+        this.md = new Markdown({
+            express: this.App
+        })
     }
 
     onError(error) {

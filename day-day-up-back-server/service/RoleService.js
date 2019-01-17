@@ -1,5 +1,5 @@
 const BaseService =require('./BaseService')
-const db = require('./../pojos')
+const db = require('./../models')
 
 class RoleService extends BaseService{
     constructor(){

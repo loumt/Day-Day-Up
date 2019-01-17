@@ -5,7 +5,7 @@ const SettingWindow = require('./windows/SettingWindow');
 const UpdateWindow = require('./windows/UpdateWindow');
 const TrayWindow = require('./windows/TrayWindow');
 const pck = require('./../package.json');
-const Update =require('./tools/Update')
+const Update = require('./tools/Update')
 
 class Main {
     constructor() {
@@ -35,50 +35,50 @@ class Main {
         });
     };
 
-    initIPC(){
+    initIPC() {
         this.initVersionIpc();
     }
 
     /**
      * 初始化version ipc
      */
-    initVersionIpc(){
-        ipcMain.on('current-version',(e)=>{
+    initVersionIpc() {
+        ipcMain.on('current-version', (e) => {
             e.returnValue = Update.getCurrentVersion()
         })
-        ipcMain.on('lastest-version',(e)=>{
-            Update.getLastestVersion().then((lastestVersion)=>{
+        ipcMain.on('lastest-version', (e) => {
+            Update.getLastestVersion().then((lastestVersion) => {
                 e.returnValue = lastestVersion
-            }).catch(e=>{
+            }).catch(e => {
                 e.returnValue = '获取失败'
             })
         })
-        ipcMain.on('version',(e)=>{
-            Update.getVersionInfo().then((versionInfo)=>{
+        ipcMain.on('version', (e) => {
+            Update.getVersionInfo().then((versionInfo) => {
                 console.dir(versionInfo)
                 e.returnValue = versionInfo
-            }).catch(e=>{
+            }).catch(e => {
                 e.returnValue = '获取失败'
             })
         })
-        ipcMain.on('update',(e)=>{
+        ipcMain.on('update', (e) => {
             let update = Update.getInstance();
-            update.on('out',(msg)=>{
+            update.on('out', (msg) => {
                 console.log(msg);
             })
-            update.on('error',(msg)=>{
+            update.on('error', (msg) => {
                 console.log(msg);
             })
-            update.on('success',(e)=>{
+            update.on('success', (e) => {
                 console.log('success');
             })
             //文件总数
-            update.on('total',(total)=>{
+            update.on('total', (total) => {
                 console.log(`Total : ${total}`);
             })
             //文件下载完成时，向前台发送下载进度百分比
-            update.on('end',()=>{
-                BrowserWindow.getFocusedWindow().webContents.send('update-progress',update.getUpdatePercent())
+            update.on('end', () => {
+                BrowserWindow.getFocusedWindow().webContents.send('update-progress', update.getUpdatePercent())
             })
 
             update.update();
@@ -111,7 +111,7 @@ class Main {
     }
 
     createTrap() {
-        this.tray = new TrayWindow(this.mainWindow, this.settingWindow,this.updateWindow);
+        this.tray = new TrayWindow(this.mainWindow, this.settingWindow, this.updateWindow);
     }
 }
 

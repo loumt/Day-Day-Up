@@ -8,7 +8,17 @@ module.exports = (req, res, next) => {
         res.status(200)
         let rs = {success: true}
         if (object) {
-            rs = Object.assign(rs, object);
+          switch (typeof object) {
+            case 'number':
+            case 'string':
+              rs.message = object;
+              break;
+            case 'object':
+              rs = _.assign(rs, object);
+              break;
+            default:
+              break;
+          }
         }
         res.json(rs)
     }

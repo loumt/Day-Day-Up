@@ -3,28 +3,23 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+
 module.exports = {
   dev: {
 
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
-      '/': {
-        target: 'http://192.168.70.1:3000',
-        changeOrigin: true,
-      }
-    },
+    proxyTable: {},
 
     // Various Dev Server settings
-    host: '192.168.70.1', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-    useEslint: false,
-    showEslintErrorsInOverlay: false,
+
 
     /**
      * Source Maps
@@ -43,11 +38,11 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../../day-day-up-back-server/views/day.ejs'),
+    index: path.resolve(__dirname, '../../day-day-up-back-server/views/main.ejs'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../../day-day-up-back-server/public'),
-    assetsSubDirectory: 'day',
+    assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 
     /**
