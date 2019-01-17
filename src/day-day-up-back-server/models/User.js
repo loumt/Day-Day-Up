@@ -30,6 +30,11 @@ let User = sequlize.define(modelProp.name, {
         type: Sequelize.DataTypes.STRING,
         allowNull: true,
         defaultValue:''
+    },
+    email: {
+      type: Sequelize.DataTypes.STRING,
+      allowNull: true,
+      defaultValue:''
     }
 }, {
     tableName: modelProp.tableName,
