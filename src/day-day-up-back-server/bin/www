@@ -88,4 +88,6 @@ class ServerClient extends EventEmitter {
     }
 }
 
+require('./../models')
+
 module.exports = new ServerClient(app, config)

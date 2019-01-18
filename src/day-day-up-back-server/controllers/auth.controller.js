@@ -1,5 +1,9 @@
 const BMP24 = require('gd-bmp').BMP24;
-
+const ErrorCode = require('./../constants/ErrorCode')
+const {body, validationResult} = require('express-validator/check')
+const UserService =require('./../service/UserService')
+const MD5 = require('md5')
+const _ = require('lodash')
 
 /**
  * 主页
@@ -7,9 +11,50 @@ const BMP24 = require('gd-bmp').BMP24;
  * @param res
  * @param next
  */
-exports.main = (req,res,next)=>{
+exports.main = (req, res, next) => {
   res.render('main')
 }
+
+/**
+ * 用户认证
+ * @param req
+ * @param res
+ * @param next
+ */
+exports.auth = [
+  [
+    body('username').exists(),
+    body('password').exists()
+  ],
+  async (req, res, next) => {
+    const result = validationResult(req)
+    if (!result.isEmpty()) {
+      return res.jsonOnError(ErrorCode.PARAMETER_ILLEGAL);
+    }
+
+    try {
+      let {username, password} = req.body;
+
+      let user = await UserService.findOneByAttribute({username,destroy:false})
+      if(user){
+        if(user.disabled){
+          return res.jsonOnError(ErrorCode.USER_IS_DISABLED)
+        }
+
+        if(MD5(user.password) === password){
+          res.session.userId = user.id
+          res.jsonOnSuccess(_.pick(user,['id','username','nickname','realname','phone','qq','email','level','rank']))
+        }else{
+           res.jsonOnError(ErrorCode.PASSWORD_NOT_MATCH)
+        }
+      }else{
+        res.jsonOnError(ErrorCode.USER_IS_NOT_EXIST)
+      }
+    }catch(err){
+      res.jsonOnError(ErrorCode.SYSTEM_ERROR)
+    }
+  }
+]
 
 
 /**
@@ -18,7 +63,7 @@ exports.main = (req,res,next)=>{
  * @param res
  * @param next
  */
-exports.captcha = (req,res,next)=>{
+exports.captcha = (req, res, next) => {
   try {
     let captcha = makeCaptcha();
     req.session.captcha = captcha.str;
@@ -77,4 +122,9 @@ exports.captcha = (req,res,next)=>{
 
     return {img: img.getFileData(), str: str};
   }
+}
+
+
+exports.login = (req, res, next) => {
+
 }

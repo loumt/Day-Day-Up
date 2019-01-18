@@ -2,21 +2,35 @@ const Sequelize = require('sequelize');
 const {sequlize} = require('./../middleware/SequlizeConnection');
 
 const modelProp = {
-  name: 'Role',
-  tableName: 'UP_ROLE'
+  name: 'Article',
+  tableName: 'UP_ARTICLE'
 }
 
-let Role = sequlize.define(modelProp.name, {
+let Article = sequlize.define(modelProp.name, {
   id: {
     type: Sequelize.DataTypes.BIGINT,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true
   },
-  name: {
-    type: Sequelize.DataTypes.STRING,
+  title: {
+    type: Sequelize.DataTypes.TEXT('tiny')  ,
     allowNull: false,
-    comment: "角色名"
+    comment: "标题"
+  },
+  sub_title: {
+    type: Sequelize.DataTypes.TEXT('tiny'),
+    allowNull: false,
+    comment: "子标题"
+  },
+  content: {
+    type: Sequelize.DataTypes.TEXT,
+    allowNull: true,
+    comment: '内容'
+  },
+  type: {
+    type: Sequelize.DataTypes.TINYINT,
+    allowNull: true
   },
   description: {
     type: Sequelize.DataTypes.STRING,
@@ -29,15 +43,11 @@ let Role = sequlize.define(modelProp.name, {
     allowNull: true,
     defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
     comment: '创建时间'
-  },
-  cuid: {
-    type: Sequelize.DataTypes.BIGINT,
-    allowNull: true
   }
 }, {
   tableName: modelProp.tableName,
   timestamps: false,
-  comment: '角色表'
+  comment: '文章表'
 });
 
-module.exports = Role
+module.exports = Article

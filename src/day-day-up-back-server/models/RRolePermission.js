@@ -2,21 +2,11 @@ const Sequelize = require('sequelize');
 const {sequlize} = require('./../middleware/SequlizeConnection');
 
 const modelProp = {
-  name: 'RUserRole',
-  tableName: 'UP_R_USER_ROLE'
+  name: 'RRolePermission',
+  tableName: 'UP_R_ROLE_PERMISSION'
 }
 
-let RUserRole = sequlize.define(modelProp.name, {
-  user_id: {
-    type: Sequelize.DataTypes.BIGINT,
-    allowNull: false,
-    primaryKey: true,
-    references: {
-      model: 'UP_USER',
-      key: 'id'
-    },
-    onDelete: 'CASCADE'
-  },
+let RRolePermission = sequlize.define(modelProp.name, {
   role_id: {
     type: Sequelize.DataTypes.BIGINT,
     allowNull: false,
@@ -26,11 +16,21 @@ let RUserRole = sequlize.define(modelProp.name, {
       key: 'id'
     },
     onDelete: 'CASCADE'
+  },
+  permission_id: {
+    type: Sequelize.DataTypes.BIGINT,
+    allowNull: false,
+    primaryKey: true,
+    references: {
+      model: 'UP_PERMISSION',
+      key: 'id'
+    },
+    onDelete: 'CASCADE'
   }
 }, {
   tableName: modelProp.tableName,
   timestamps: false,
-  comment: '用户角色关联表'
+  comment: '角色权限关联表'
 });
 
-module.exports = RUserRole
+module.exports = RRolePermission

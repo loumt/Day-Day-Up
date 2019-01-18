@@ -2,21 +2,28 @@ const Sequelize = require('sequelize');
 const {sequlize} = require('./../middleware/SequlizeConnection');
 
 const modelProp = {
-  name: 'Role',
-  tableName: 'UP_ROLE'
+  name: 'RankRecord',
+  tableName: 'UP_RANK_RECORD'
 }
 
-let Role = sequlize.define(modelProp.name, {
+let RankRecord = sequlize.define(modelProp.name, {
   id: {
     type: Sequelize.DataTypes.BIGINT,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true
   },
-  name: {
-    type: Sequelize.DataTypes.STRING,
+  user_id: {
+    type: Sequelize.DataTypes.BIGINT,
     allowNull: false,
-    comment: "角色名"
+    references : { model: 'UP_USER', key: 'id' },
+    comment: '兑换人'
+  },
+  rank_award_id: {
+    type: Sequelize.DataTypes.BIGINT,
+    allowNull: false,
+    references : { model: 'UP_RANK_AWARD', key: 'id' },
+    comment: '兑换物品'
   },
   description: {
     type: Sequelize.DataTypes.STRING,
@@ -28,16 +35,12 @@ let Role = sequlize.define(modelProp.name, {
     type: Sequelize.DataTypes.DATE,
     allowNull: true,
     defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
-    comment: '创建时间'
-  },
-  cuid: {
-    type: Sequelize.DataTypes.BIGINT,
-    allowNull: true
+    comment: '兑换时间'
   }
 }, {
   tableName: modelProp.tableName,
   timestamps: false,
-  comment: '角色表'
+  comment: '积分记录表'
 });
 
-module.exports = Role
+module.exports = RankRecord

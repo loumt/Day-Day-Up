@@ -4,11 +4,8 @@
  * Server基类
  */
 class BaseService {
-    constructor(model,...associates) {
+    constructor(model) {
         this.model = model
-        associates.forEach(associate=>{
-            this[associate.name] = associate;
-        })
     }
 
     create(mode) {
@@ -92,6 +89,10 @@ class BaseService {
             Object.assign({where: params});
         }
         return this.model.findAndCountAll(conditions);
+    }
+
+    count(options){
+        return this.model.count({where: options})
     }
 
     /**
