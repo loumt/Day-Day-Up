@@ -38,6 +38,18 @@ let Article = sequlize.define(modelProp.name, {
     defaultValue: '',
     comment: "描述"
   },
+  comments: {
+    type: Sequelize.DataTypes.INTEGER,
+    allowNull: false,
+    defaultValue: '0',
+    comment: "评论"
+  },
+  reward: {
+    type: Sequelize.DataTypes.INTEGER,
+    allowNull: false,
+    defaultValue: '0',
+    comment: "获赞数"
+  },
   ctime: {
     type: Sequelize.DataTypes.DATE,
     allowNull: true,

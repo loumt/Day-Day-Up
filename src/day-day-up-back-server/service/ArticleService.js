@@ -7,4 +7,4 @@ class ArticleService extends BaseService{
   }
 }
 
-module.exports = ArticleService
+module.exports = new ArticleService()

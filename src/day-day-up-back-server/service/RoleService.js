@@ -1,4 +1,4 @@
-const BaseService =require('./BaseService')
+const BaseService = require('./BaseService.js')
 const db = require('./../models')
 
 class RoleService extends BaseService{

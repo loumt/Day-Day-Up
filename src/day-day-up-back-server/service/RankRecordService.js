@@ -1,5 +1,5 @@
 const db = require('./../models')
-const BaseService = require('BaseService')
+const BaseService = require('./BaseService.js')
 
 
 class RankRecordService extends BaseService {
@@ -8,5 +8,5 @@ class RankRecordService extends BaseService {
   }
 }
 
-module.exports = RankRecordService()
+module.exports = new RankRecordService()
 

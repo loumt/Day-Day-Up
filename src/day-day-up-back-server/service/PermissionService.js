@@ -1,5 +1,5 @@
 const db = require('./../models')
-const BaseService = require('BaseService')
+const BaseService = require('./BaseService.js')
 
 
 class PermissionService extends BaseService {
@@ -8,5 +8,5 @@ class PermissionService extends BaseService {
   }
 }
 
-module.exports = PermissionService()
+module.exports = new PermissionService()
 

@@ -4,5 +4,7 @@ destroy
 update
     1.{}
     2.{where: {}} 
+findOne
+    
     
 
