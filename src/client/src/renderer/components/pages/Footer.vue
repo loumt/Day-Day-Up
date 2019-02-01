@@ -1,6 +1,6 @@
 <template>
     <div class="footer-class">
-        <span><i class="iconfont icon-previous-copy icon-style-left" @click="goBack" v-show="this.$route.path != '/'"></i></span>
+        <span><i class="iconfont icon-previous-copy icon-style-left" @click="goBack" v-show="this.$route.path != '/login'"></i></span>
         <span></span>
         <i class="iconfont icon-shezhi2 icon-style setting-icon" @click="setting"></i>
     </div>

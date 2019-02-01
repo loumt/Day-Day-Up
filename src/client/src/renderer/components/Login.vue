@@ -23,8 +23,8 @@
         <div class="content-main-footer">
             <p class="content-main-footer-remark">--其他方式登录--</p>
             <div class="content-main-footer-icon">
-                <i class="iconfont icon-btn_qq"></i>
-                <i class="iconfont icon-btn_wechat"></i>
+                <i class="iconfont icon-btn_qq" @click="loginForQQ"></i>
+                <i class="iconfont icon-btn_wechat" @click="loginForWechat"></i>
             </div>
         </div>
     </div>
@@ -71,6 +71,12 @@
         }).catch(err=>{
           console.log(err)
         })
+      },
+      loginForQQ(){
+
+      },
+      loginForWechat(){
+
       }
     },
   }

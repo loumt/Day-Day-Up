@@ -1,6 +1,6 @@
 <template>
     <div class="userInfo" :style="{width: styleWidth}">
-        <img @click="personalInfo" :src="userInfo.icon" class="userImg" @contextmenu.prevent="logout">
+        <img @click="personalInfo" :src="userInfo.icon" class="userImg" @contextmenu.prevent="logout"/>
         <div class="userRemarks">
             <div class="userName">{{userInfo.nickname}}</div>
             <div class="remark">{{userInfo.signature}}</div>
@@ -28,7 +28,7 @@
           if(localStorage.getItem('user_id')){
             this.$router.push('/personal')
             }else{
-            this.$router.push('/')
+            this.$router.push('/login')
           }
         },
         logout(){

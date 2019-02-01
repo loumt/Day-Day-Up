@@ -7,15 +7,16 @@ export default new Router({
   routes: [
     {
       path: '*',
-      redirect: '/'
+      redirect: '/login'
     },
     {
       path: '/',
       name: 'mainWindow',
+      redirect: '/login',
       component: ()=> import('@/components/MainWindow.vue'),
       children: [
         {
-          path: '',
+          path: '/login',
           name:'Login',
           component: ()=> import('@/components/Login.vue')
         },
