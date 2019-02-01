@@ -44,7 +44,7 @@ app.use(function (req, res, next) {
 
 app.use(function (err, req, res, next) {
   logger.system().error(err);
-  res.jsonOn404('Router Not Found!')
+  res.jsonOnError(ErrorCode.SYSTEM_ERROR)
 });
 
 module.exports = app;

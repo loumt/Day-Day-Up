@@ -55,6 +55,12 @@ let User = sequlize.define(modelProp.name, {
     allowNull:true,
     comment: '用户生日'
   },
+  signature: {
+    type: Sequelize.DataTypes.TEXT,
+    allowNull: true,
+    default: null,
+    comment: '个性签名'
+  },
   level: {
     type: Sequelize.DataTypes.INTEGER,
     allowNull: false,

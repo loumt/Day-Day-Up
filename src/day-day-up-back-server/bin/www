@@ -63,7 +63,7 @@ class ServerClient extends EventEmitter {
     }
 
     onListening() {
-        this.info(`server start.....`)
+        this.info(`server start.....listen port : ${this.port}`)
         this.emit('start')
     }
 

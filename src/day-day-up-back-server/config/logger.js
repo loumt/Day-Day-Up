@@ -1,5 +1,5 @@
 
-const logFolder = './../logs'
+const logFolder = process.platform === 'win32' ?  './../log-day-day' : '/var/logs/day-day-up-log'
 
 module.exports = {
   appenders: {
@@ -29,13 +29,13 @@ module.exports = {
   },
   categories: {
     default: {
-      appenders: ['system'], level: 'debug'
+      appenders: ['console'], level: 'debug'
     },
     system: {
-      appenders: ['system'], level: 'debug'
+      appenders: ['system','console'], level: 'debug'
     },
     access: {
-      appenders: ['access'], level: 'debug'
+      appenders: ['access','console'], level: 'debug'
     },
     database: {
       appenders: ['database'], level: 'debug'

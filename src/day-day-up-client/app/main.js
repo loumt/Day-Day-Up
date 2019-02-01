@@ -20,6 +20,11 @@ class Main {
 
     initApp() {
         app.setAppUserModelId(pck.appId);//你应该在自己的应用中使用 app.setAppUserModelId API 方法设置相同的 API和ID，不然 Windows 将不能正确地把你的应用固定在任务栏上。
+
+        app.on('open-file',()=>{
+            console.log('open file.....')
+        })
+
         app.on('ready', () => {
             this.createMainWindow();
             this.createSettingWindow();

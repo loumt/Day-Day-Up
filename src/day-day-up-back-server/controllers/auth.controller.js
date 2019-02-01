@@ -41,9 +41,21 @@ exports.auth = [
           return res.jsonOnError(ErrorCode.USER_IS_DISABLED)
         }
 
-        if(MD5(user.password) === password){
-          res.session.userId = user.id
-          res.jsonOnSuccess(_.pick(user,['id','username','nickname','realname','phone','qq','email','level','rank']))
+        if(user.password === MD5(password)){
+          let userInfo = {
+            id: user.id,
+            username: user.username,
+            nickname: user.nickname,
+            realname: user.realname,
+            phone: user.phone,
+            icon: user.icon,
+            qq: user.qq,
+            signature: user.signature,
+            email: user.email,
+            level: user.level,
+            rank: user.rank
+          }
+          res.jsonOnSuccess(userInfo)
         }else{
            res.jsonOnError(ErrorCode.PASSWORD_NOT_MATCH)
         }
@@ -51,7 +63,7 @@ exports.auth = [
         res.jsonOnError(ErrorCode.USER_IS_NOT_EXIST)
       }
     }catch(err){
-      res.jsonOnError(ErrorCode.SYSTEM_ERROR)
+      next(err)
     }
   }
 ]
@@ -124,7 +136,11 @@ exports.captcha = (req, res, next) => {
   }
 }
 
-
-exports.login = (req, res, next) => {
-
+/**
+ * 用户登出
+ */
+exports.logout = (req, res, next) => {
+  if(res.session)
+    res.session.destory()
+  res.end()
 }

@@ -11,6 +11,12 @@ module.exports = {
     },
     '/auth':{
       post: 'auth.auth',
+      '/out': {
+        delete: 'auth.logout'
+      }
+    },
+    '/register':{
+      post: 'user.create'
     },
     '/articles':{
       '/:articleId': {

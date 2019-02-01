@@ -24,29 +24,34 @@ exports.create = [
   [
     body('username').exists(),
     body('password').exists(),
-    body('nickname').exists(),
-    body('realname'),
-    body('phone'),
-    body('qq'),
-    body('email'),
-    body('birthday'),
-    body('icon'),
-    body('disabled').toInt().isInt(),
-    body('description').exists(),
+    body('nickname').optional(),
+    body('realname').optional(),
+    body('phone').optional(),
+    body('qq').optional(),
+    body('email').optional(),
+    body('birthday').optional(),
+    body('signature').optional(),
+    body('icon').optional(),
+    body('disabled').optional().toInt().isInt(),
+    body('description').optional()
   ],
   async (req, res, next) => {
     let validateResult = validationResult(req)
     if (!validateResult.isEmpty()) {
       return res.jsonOnError(ErrorCode.PARAMETER_LOST)
     }
-    let {userId} = req.session
-    let encodePassoword = MD5(req.body.password)
-    let code = MD5(req.body.username)
-    await UserService.create(_.assign({ctime: new Date(), cuid: userId}, {
-      code,
-      password: encodePassoword
-    }, _.pick(req.body, ['username', 'nickname', 'realname', 'phone', 'qq', 'email', 'birthday', 'icon', 'disabled'])))
-    res.jsonOnSuccess()
+    try{
+      let {userId} = req.session
+      let encodePassoword = MD5(req.body.password)
+      let code = MD5(req.body.username)
+      await UserService.create(_.assign({ctime: new Date(), cuid: userId}, {
+        code,
+        password: encodePassoword
+      }, _.pick(req.body, ['username', 'nickname', 'realname', 'phone', 'qq', 'email', 'birthday', 'icon', 'disabled'])))
+      res.jsonOnSuccess()
+    }catch(err){
+      next(err)
+    }
   }
 ]
 

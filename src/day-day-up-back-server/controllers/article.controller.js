@@ -2,6 +2,7 @@ const {body, param, query, validationResult} = require('express-validator/check'
 const _ = require('lodash')
 const {Op} = require('sequelize')
 const ErrorCode = require('./../constants/ErrorCode')
+const ArticleConstants = require('./../constants/Article.Constants')
 const ArticleService = require('./../service/ArticleService')
 
 exports.one = [
@@ -31,7 +32,9 @@ exports.create = [
     if (!validateResult.isEmpty()) {
       return res.jsonOnError(ErrorCode.PARAMETER_LOST)
     }
-    await ArticleService.create(_.assign({date: new Date()}, _.pick(req.body, ['title', 'sub_title', 'content', 'type', 'description'])))
+    let createModel = {date: new Date()}
+    let {title, sub_title, content, type = ArticleConstants.ORIGINAL.TYPE, description} = req.body
+    await ArticleService.create(_.assign(createModel, {title, sub_title, content, type, description}))
     res.jsonOnSuccess()
   }
 ]

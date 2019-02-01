@@ -1,0 +1,49 @@
+{
+  "appId": "com.loumt.cloudapp",
+  "productName": "DayDayUp",
+  "copyright": "Copyright © 2018 Naming",
+  "directories": {
+    "output": "dist/builder"
+  },
+  "publish": [
+    {
+      "provider": "generic",
+      "url": "http://127.0.0.1:3000"
+    }
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      }
+    ],
+    "asar": false,
+    "icon": "build/icons/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true,
+    "installerHeaderIcon": "build/icons/icon.ico",
+    "installerIcon": "build/icons/icon.ico",
+    "uninstallerIcon": "build/icons/icon.ico",
+    "deleteAppDataOnUninstall":true,
+    "artifactName": "day-day-${arch}-${version}.${ext}",
+    "displayLanguageSelector": true,
+    "runAfterFinish": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "asarUnpack": [
+    "./node_modules/electron"
+  ],
+  "files": [
+    "dist/electron"
+  ],
+  "removePackageScripts": true,
+  "compression": "store"
+}
