@@ -30,6 +30,11 @@ export default new Router({
           name: 'Personal',
           component: ()=> import('@/components/Personal.vue')
         },
+        {
+          path:'/message',
+          name: 'Message',
+          component: ()=> import('@/components/MessageList.vue')
+        }
       ]
     }
   ]

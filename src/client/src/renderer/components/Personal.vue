@@ -120,7 +120,7 @@
     .content-main-from > div > span {
         font-size: 12px;
         line-height: 20px;
-        font-weight: 500;
+        font-weight: normal;
         border: 2px solid #252638;
         border-radius: 3px;
         width: 150px;

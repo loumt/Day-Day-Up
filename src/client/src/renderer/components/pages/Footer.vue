@@ -14,7 +14,11 @@
       },
       goBack () {
         this.$store.dispatch('changeTransition', 'slipRight')
-        this.$router.push('/')
+        if(localStorage.getItem('user_id')){
+          this.$router.push('/message')
+        }else{
+          this.$router.push('/')
+        }
       }
     }
   }

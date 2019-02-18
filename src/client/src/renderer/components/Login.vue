@@ -11,12 +11,16 @@
 
         <div class="content-main-from">
             <div>
-                <el-input v-model="fromData.username" placeholder="请输入用户名"></el-input>
-                <el-input style="margin-top: 10px;" v-model="fromData.password" placeholder="请输入密码!"></el-input>
+                <el-input v-model="fromData.username" placeholder="请输入用户名">
+                    <i slot="prefix" class="el-input__icon el-icon-star-on"></i>
+                </el-input>
+                <el-input style="margin-top: 10px;" v-model="fromData.password" placeholder="请输入密码!">
+                    <i slot="prefix" class="el-input__icon el-icon-star-on"></i>
+                </el-input>
             </div>
             <div style="margin-top: 10px;">
-                <el-button style="width:47%;" @click="login">登录</el-button>
-                <el-button style="width:47%;" @click="register">注册</el-button>
+                <el-button @click="login" style="width: 45%;float: left;">登录</el-button>
+                <el-button @click="register" style="width: 45%;float: right;">注册</el-button>
             </div>
         </div>
 
@@ -42,7 +46,7 @@
       return {
         fromData: {
           username:'admin',
-          password:'123456'
+          password:'1234567'
         }
       }
     },
@@ -65,19 +69,14 @@
       },
       login() {
         this.$http.login(this.fromData).then(res =>{
+//          console.dir(res)
           this.$store.dispatch('changeUserInfo',res.data.data)
-
           localStorage.setItem('user_id', res.data.data.id)
-        }).catch(err=>{
-          console.log(err)
+          this.$router.push('/message')
         })
       },
-      loginForQQ(){
-
-      },
-      loginForWechat(){
-
-      }
+      loginForQQ(){},
+      loginForWechat(){}
     },
   }
 </script>

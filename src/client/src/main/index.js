@@ -19,7 +19,7 @@ function createWindow () {
     transparent: true,
     frame: false,
     resizable: false,
-    alwaysOnTop: false,
+    alwaysOnTop: true,
     maximizable: false,
     webPreferences: {
       webSecurity: false

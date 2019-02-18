@@ -23,8 +23,6 @@
       methods: {
         personalInfo() {
           this.$store.dispatch('changeTransition', 'flip')
-
-          console.log(localStorage.getItem('user_id'))
           if(localStorage.getItem('user_id')){
             this.$router.push('/personal')
             }else{
@@ -73,7 +71,7 @@
 
     .userName {
         height: 20px;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
         font-weight: 700;
     }

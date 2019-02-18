@@ -39,6 +39,10 @@
 </script>
 
 <style scope>
+    * {
+        font-family: "Comic Sans MS";
+    }
+
     .fullWindow {
         border-radius: 3px;
         width: 100%;
@@ -50,7 +54,7 @@
         overflow: hidden;
         position: relative;
         border-radius: 8px;
-        z-index:99;
+        z-index: 99;
     }
 
     .bodyDiv {
