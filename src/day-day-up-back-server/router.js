@@ -59,6 +59,14 @@ module.exports = {
         get: 'rankrecord.one',
       },
       get: 'rankrecord.list'
-    }
+    },
+    '/message':{
+      '/:messageId': {
+        get: 'message.one',
+        delete: 'message.delete',
+      },
+      post: 'message.create',
+      get: 'message.list'
+    },
   }
 }

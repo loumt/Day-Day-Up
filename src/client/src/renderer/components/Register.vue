@@ -5,7 +5,7 @@
                 <i class="iconfont icon-guanjiaowangtubiao01 content-main-logo"></i>
             </div>
             <div>
-                <span class="content-main-tag">注册</span>
+                <span class="content-main-tag">注 册</span>
             </div>
         </div>
 

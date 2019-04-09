@@ -1,7 +1,7 @@
 export default {
   state: {
     transition: 'default',
-    backGroundImg: 'bg.gif',
+    backGroundImg: '1.jpg',
     userInfo: {
       icon: '',
       nickname: '',

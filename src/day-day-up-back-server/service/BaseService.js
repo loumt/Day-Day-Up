@@ -86,7 +86,7 @@ class BaseService {
             raw: true
         };
         if (params) {
-            Object.assign({where: params});
+            Object.assign(conditions,{where: params});
         }
         return this.model.findAndCountAll(conditions);
     }

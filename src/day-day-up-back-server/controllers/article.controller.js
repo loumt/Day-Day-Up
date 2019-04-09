@@ -19,6 +19,7 @@ exports.one = [
     return res.jsonOnSuccess(articles)
   }
 ]
+
 exports.create = [
   [
     body('title').exists(),
@@ -76,7 +77,7 @@ exports.list = [
     let {length, offset, title} = req.query
     let order = null, options = null
     options.title = {[ Op.like ]: `${title}`}
-    let articles = await ArticleService.findAll(offset, length, order, options)
+    let articles = await ArticleService.findAll(parseInt(offset), parseInt(length), order, options)
     return res.jsonOnSuccess(articles)
   }
 ]

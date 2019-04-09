@@ -18,6 +18,7 @@ function createWindow () {
     width: 300,
     transparent: true,
     frame: false,
+    show: false,
     resizable: false,
     alwaysOnTop: true,
     maximizable: false,
@@ -33,8 +34,12 @@ function createWindow () {
     app.exit(0)
   })
 
+  mainWindow.on('ready-to-show',()=>{
+    mainWindow.show()
+  })
 
-  electronShortCut.register(mainWindow, 'Esc', (p1,p2) => {
+
+  electronShortCut.register(mainWindow, 'Esc', () => {
     mainWindow.close()
   });
 }

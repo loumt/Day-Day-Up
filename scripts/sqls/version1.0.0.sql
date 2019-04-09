@@ -70,3 +70,15 @@ CREATE TABLE `up_rank_award` (
   `ctime` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='积分奖励表';
+
+
+CREATE TABLE `up_message` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `content` text,
+  `type` tinyint(2),
+	`from_user_id` bigint(20),
+  `to_user_id` bigint(20),
+  `ctime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `rtime` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='消息表';

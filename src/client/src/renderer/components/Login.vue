@@ -5,7 +5,7 @@
                 <i class="iconfont icon-guanjiaowangtubiao01 content-main-logo"></i>
             </div>
             <div>
-                <span class="content-main-tag">登录</span>
+                <span class="content-main-tag">登 录</span>
             </div>
         </div>
 
@@ -46,7 +46,7 @@
       return {
         fromData: {
           username:'admin',
-          password:'1234567'
+          password:'123456'
         }
       }
     },
