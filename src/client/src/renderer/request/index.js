@@ -1,18 +1,20 @@
 import axios from 'axios'
+import {ipcRenderer} from 'electron'
 
 let interceptors = {
   responseHandler: response => {
-    return response;
+    return response.data;
   },
   errorHandler: error => {
-    if(error && error.response && error.response.data && error.response.data.code){
+    if (error && error.response && error.response.data && error.response.data.code) {
+      ipcRenderer.send('showErrorModel', error.response.data.message)
       console.log(error.response.data.message)
-    }else{
+    } else {
+      ipcRenderer.send('showErrorModel', 'Server Error!')
       console.dir(error)
     }
   }
 }
-
 
 
 let instance = axios.create({
@@ -31,5 +33,8 @@ export default {
   },
   userInfo: function (options) {
     return instance.get(`/api/users/${options.user_id}`)
+  },
+  main: function () {
+    return instance.get(`/api/main`)
   }
 }

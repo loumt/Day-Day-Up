@@ -70,8 +70,8 @@
       login() {
         this.$http.login(this.fromData).then(res =>{
 //          console.dir(res)
-          this.$store.dispatch('changeUserInfo',res.data.data)
-          localStorage.setItem('user_id', res.data.data.id)
+          this.$store.dispatch('changeUserInfo',res.data)
+          localStorage.setItem('user_id', res.data.id)
           this.$router.push('/message')
         })
       },

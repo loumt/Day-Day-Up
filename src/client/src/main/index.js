@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow,ipcMain} from 'electron'
 import electronShortCut from 'electron-localshortcut'
 // import store from './../renderer/store'
 
@@ -38,10 +38,13 @@ function createWindow () {
     mainWindow.show()
   })
 
-
   electronShortCut.register(mainWindow, 'Esc', () => {
     mainWindow.close()
   });
+
+  ipcMain.on('showErrorModel' , (e,message)=>{
+    console.log(message)
+  })
 }
 
 app.on('ready', createWindow)

@@ -7,39 +7,39 @@
         </div>
         <div>
             <!--Message List-->
-            <div class="workspace-content" @click="open('workspace')">
+            <div class="workspace-content" @click="open('message-list')">
                 <div class="workspace-content-left">
                     <img class="workspace-icon" src="./../../../static/icon/message.png">
                 </div>
                 <div class="workspace-content-right">
-                    <div class="workspace-num workspace-unread">{{this.message.unread}}</div>
-                    <div class="workspace-num workspace-read">{{this.message.read}}</div>
+                    <el-tag class="workspace-num" @click="open('message-unread-list')">{{this.discussMessage.unread}}</el-tag>
+                    <el-tag class="workspace-num" @click="open('message-read-list')">{{this.discussMessage.read}}</el-tag>
                 </div>
             </div>
-            <div class="workspace-content" @click="open('workspace')">
+            <div class="workspace-content" @click="open('praise-list')">
                 <div class="workspace-content-left">
                     <img class="workspace-icon" src="./../../../static/icon/512602.png">
                 </div>
                 <div class="workspace-content-right">
-                    <div class="workspace-num workspace-unread">{{this.enshrine}}</div>
+                    <el-tag class="workspace-num workspace-unread"  @click="open('message-enshrine-list')">{{this.enshrine}}</el-tag>
                 </div>
             </div>
-            <div class="workspace-content" @click="open('workspace')">
+            <div class="workspace-content" @click="open('broadcast-list')">
                 <div class="workspace-content-left">
                     <img class="workspace-icon" src="./../../../static/icon/512795.png">
                 </div>
                 <div class="workspace-content-right">
-                    <div class="workspace-num workspace-unread">{{this.sys_message.unread}}</div>
-                    <div class="workspace-num workspace-read">{{this.sys_message.read}}</div>
+                    <el-tag class="workspace-num workspace-unread" @click="open('sys-message-unread-list')">{{this.sysMessage.unread}}</el-tag>
+                    <el-tag class="workspace-num workspace-read" @click="open('sys-message-read-list')">{{this.sysMessage.read}}</el-tag>
                 </div>
             </div>
-            <div class="workspace-content" @click="open('workspace')">
+            <div class="workspace-content" @click="open('care-list')">
                 <div class="workspace-content-left">
                     <img class="workspace-icon" src="./../../../static/icon/like.png">
                 </div>
                 <div class="workspace-content-right">
-                    <div class="workspace-num workspace-unread">{{this.face_message.unread}}</div>
-                    <div class="workspace-num workspace-read">{{this.face_message.read}}</div>
+                    <el-tag class="workspace-num workspace-unread" @click="open('face-message-unread-list')">{{this.careMessage.unread}}</el-tag>
+                    <el-tag class="workspace-num workspace-read" @click="open('face-message-read-list')">{{this.careMessage.read}}</el-tag>
                 </div>
             </div>
 
@@ -59,20 +59,28 @@
     name: 'MessageList',
     data() {
       return {
-        message: {
+        discussMessage: {
           unread: 30,
           read: 444
         },
         enshrine: 500,
-        sys_message: {
+        sysMessage: {
           unread: 2,
           read: 43
         },
-        face_message: {
+        careMessage: {
           unread: 3,
           read: 15
         }
       }
+    },
+    mounted(){
+      this.$http.main().then(res=>{
+        this.enshrine = res.data.praise
+        this.discussMessage = res.data.discussMessage
+        this.sysMessage = res.data.sysMessage
+        this.careMessage = res.data.careMessage
+      })
     },
     methods: {
       open: function(winType){
@@ -120,7 +128,8 @@
     }
 
     .workspace-num{
-        color: #e6051a;
+        margin-top: 15%;
+        border-radius: 20px;
     }
     .workspace-read{
 

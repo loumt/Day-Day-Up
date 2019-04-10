@@ -52,7 +52,7 @@
     mounted(){
       if(localStorage.getItem('user_id')){
         this.$http.userInfo({user_id: localStorage.getItem('user_id')}).then(res=>{
-          Object.assign(this.fromData, res.data.data)
+          Object.assign(this.fromData, res.data)
         }).catch(err=>{
           console.log(err)
         })

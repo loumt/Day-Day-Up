@@ -1,0 +1,915 @@
+[2019-01-31T14:27:14.792] [ERROR] system - { NotFoundError: Not Found
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\app.js:42:8
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at session (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express-session\index.js:454:7)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\serve-static\index.js:75:16) message: 'Not Found' }
+[2019-01-31T14:27:42.463] [ERROR] system - { NotFoundError: Not Found
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\app.js:42:8
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at session (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express-session\index.js:454:7)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\serve-static\index.js:75:16) message: 'Not Found' }
+[2019-01-31T14:27:43.631] [ERROR] system - { NotFoundError: Not Found
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\app.js:42:8
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at session (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express-session\index.js:454:7)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\serve-static\index.js:75:16) message: 'Not Found' }
+[2019-01-31T14:28:05.014] [ERROR] system - { NotFoundError: Not Found
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\app.js:42:8
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at session (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express-session\index.js:454:7)
+    at Layer.handle [as handle_request] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:317:13)
+    at D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\serve-static\index.js:75:16) message: 'Not Found' }
+[2019-01-31T14:28:50.108] [ERROR] system - { SequelizeValidationError: notNull Violation: User.nickname cannot be null
+    at Promise.all.then (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\instance-validator.js:77:15)
+    at tryCatcher (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:785:20)
+    at tryOnImmediate (timers.js:747:5)
+    at processImmediate [as _immediateCallback] (timers.js:718:5)
+  name: 'SequelizeValidationError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'User.nickname cannot be null',
+       type: 'notNull Violation',
+       path: 'nickname',
+       value: null,
+       origin: 'CORE',
+       instance: [Object],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] } ] }
+[2019-01-31T15:37:13.273] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:37:12\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:37:12\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:37:12\');' }
+[2019-01-31T15:37:44.072] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:37:44\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:37:44\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:37:44\');' }
+[2019-01-31T15:52:37.911] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:52:37\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:52:37\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 07:52:37\');' }
+[2019-01-31T16:00:33.011] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:00:32\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:00:32\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:00:32\');' }
+[2019-01-31T16:02:01.233] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:02:01\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:02:01\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:02:01\');' }
+[2019-01-31T16:04:08.191] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:08\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:08\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:08\');' }
+[2019-01-31T16:04:09.013] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:08\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:08\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:08\');' }
+[2019-01-31T16:04:09.087] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:09\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:09\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:04:09\');' }
+[2019-01-31T16:12:23.016] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:12:22\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:12:22\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:12:22\');' }
+[2019-01-31T16:16:09.389] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:16:09\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:16:09\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:16:09\');' }
+[2019-01-31T16:16:11.514] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:16:11\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:16:11\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:16:11\');' }
+[2019-01-31T16:27:54.391] [ERROR] system - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+  name: 'SequelizeUniqueConstraintError',
+  errors: 
+   [ ValidationErrorItem {
+       message: 'username must be unique',
+       type: 'unique violation',
+       path: 'username',
+       value: '',
+       origin: 'DB',
+       instance: [Object],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { username: '' },
+  parent: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:27:54\');' },
+  original: 
+   { Error: Duplicate entry '' for key 'username'
+    at Packet.asError (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packets\packet.js:716:13)
+    at Query.Command.execute (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\commands\command.js:28:22)
+    at Connection.handlePacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\WebStorm 2017.2.2\day-day-up\src\day-day-up-back-server\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:595:20)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'\' for key \'username\'',
+     sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:27:54\');' },
+  sql: 'INSERT INTO `UP_USER` (`id`,`username`,`password`,`nickname`,`level`,`rank`,`code`,`disabled`,`destroy`,`ctime`) VALUES (DEFAULT,\'\',\'d41d8cd98f00b204e9800998ecf8427e\',\'\',1,0,\'d41d8cd98f00b204e9800998ecf8427e\',false,false,\'2019-01-31 08:27:54\');' }

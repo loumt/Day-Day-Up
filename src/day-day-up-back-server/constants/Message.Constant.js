@@ -1,6 +1,0 @@
-module.exports = {
-  DISCUSS_MESSAGE : 1,
-  DIRECT_MESSAGE: 2,
-  SYSTEM_MESSAGE: 3,
-  SERVICE_MESSAGE: 4
-}

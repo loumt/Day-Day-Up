@@ -1,14 +1,14 @@
-src/day-day-up-back-server/node_modules
-src/day-day-up-back-server/package-lock.json
-src/day-day-up-back-server/test
+src/backend/node_modules
+src/backend/package-lock.json
+src/backend/test
 
 
-src/day-day-up-client/node_modules
-src/day-day-up-client/dist
-src/day-day-up-client/package-lock.json
+src/client/node_modules
+src/client/dist
+src/client/package-lock.json
 
-src/day-day-up-vue/node_modules
-src/day-day-up-vue/package-lock.json
+src/web/node_modules
+src/web/package-lock.json
 
 src/client/node_modules
 

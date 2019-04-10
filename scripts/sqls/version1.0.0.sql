@@ -76,9 +76,27 @@ CREATE TABLE `up_message` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `content` text,
   `type` tinyint(2),
-	`from_user_id` bigint(20),
+  `from_user_id` bigint(20),
   `to_user_id` bigint(20),
   `ctime` datetime DEFAULT CURRENT_TIMESTAMP,
-  `rtime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `rtime` datetime,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='消息表';
+
+CREATE TABLE `up_praise_record` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) DEFAULT NULL,
+  `article_id` bigint(20) DEFAULT NULL,
+  `article_user_id` bigint(20) DEFAULT NULL,
+  `ctime` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='点赞表';
+
+
+CREATE TABLE `up_r_user_article` (
+  `user_id` bigint(20) NOT NULL,
+  `article_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`user_id`,`article_id`),
+  CONSTRAINT `up_r_user_article_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `up_user` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `up_r_user_article_ibfk_2` FOREIGN KEY (`article_id`) REFERENCES `up_article` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户文章关联表';
