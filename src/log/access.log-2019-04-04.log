@@ -1,9 +1,0 @@
-[2019-04-04T15:52:45.898] [INFO] access - POST /api/auth 200 350 ms
-[2019-04-04T15:52:48.230] [INFO] access - GET /api/users/1 200 15 ms
-[2019-04-04T15:52:50.013] [INFO] access - POST /api/auth 200 8 ms
-[2019-04-04T16:30:49.140] [INFO] access - POST /api/auth 200 189 ms
-[2019-04-04T16:50:30.712] [INFO] access - POST /api/auth 200 225 ms
-[2019-04-04T16:52:19.663] [INFO] access - POST /api/auth 200 64 ms
-[2019-04-04T16:54:44.806] [INFO] access - POST /api/auth 200 92 ms
-[2019-04-04T17:01:39.952] [INFO] access - GET /api/users/1 200 114 ms
-[2019-04-04T17:01:41.871] [INFO] access - POST /api/auth 200 6 ms

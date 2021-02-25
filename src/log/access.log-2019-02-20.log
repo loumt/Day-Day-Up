@@ -1,8 +1,0 @@
-[2019-02-20T16:23:19.012] [ERROR] access - POST /api/auth 500 128 ms
-[2019-02-20T16:23:22.526] [ERROR] access - POST /api/auth 500 6 ms
-[2019-02-20T16:23:24.370] [INFO] access - POST /api/auth 200 6 ms
-[2019-02-20T16:23:27.442] [WARN] access - GET /api/users/1 304 47 ms
-[2019-02-20T16:23:36.385] [ERROR] access - POST /api/auth 500 3 ms
-[2019-02-20T16:23:38.344] [INFO] access - POST /api/auth 200 296 ms
-[2019-02-20T16:23:49.297] [WARN] access - GET /api/users/1 304 6 ms
-[2019-02-20T16:25:01.136] [INFO] access - POST /api/auth 200 441 ms
