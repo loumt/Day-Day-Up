@@ -26,7 +26,6 @@ exports.create = [
   [
     body('title').exists(),
     body('author').exists(),
-    body('content').exists(),
     body('href').exists()
   ],
   async (req, res, next) => {
@@ -35,7 +34,7 @@ exports.create = [
       return res.jsonOnError(ErrorCode.PARAMETER_LOST)
     }
     try {
-      let createModel = _.pick(req.body, ['title', 'author', 'content', 'href'])
+      let createModel = _.pick(req.body, ['title', 'author','href'])
       await JianShuService.create(createModel)
       res.jsonOnSuccess()
     } catch (err) {

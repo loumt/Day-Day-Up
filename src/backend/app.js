@@ -13,6 +13,8 @@ const compression = require('compression')
 const sessionConfig = require('./config/session')
 
 
+require('./crawler')
+
 const app = express();
 app.use(compression())
 app.set('views', path.join(__dirname, 'views'));

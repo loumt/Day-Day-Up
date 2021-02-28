@@ -71,7 +71,9 @@ export default {
     },
     backGroundParent: state => {
       return {
-        'background': 'url("static/background/' + state.backGroundImg + '") center center / cover no-repeat fixed'
+        'background': 'url("static/background/' + state.backGroundImg + '") center center / cover no-repeat fixed',
+        'width': '100%',
+        'background-size': '150% 100%'
       }
     },
     userInfo: state => {

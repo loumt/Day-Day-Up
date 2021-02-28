@@ -3,7 +3,7 @@
 module.exports = {
   database: 'day-day-up',
   username: 'root',
-  password: 'root',
+  password: '123456',
   options: {
     dialect: 'mysql',
     host: '127.0.0.1',

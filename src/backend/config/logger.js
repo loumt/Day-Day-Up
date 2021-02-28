@@ -1,5 +1,5 @@
 
-const logFolder = process.platform === 'win32' ?  './../log' : '/var/logs/day-day-up-log'
+const logFolder = process.platform === 'win32' ?  './logs' : '/var/logs/day-day-up-log'
 
 module.exports = {
   appenders: {

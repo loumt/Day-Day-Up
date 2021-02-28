@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const cheerio = require('cheerio')
 const {scheduleJob} = require('node-schedule')
 const pool = require('./../lib/pool')
@@ -22,17 +23,16 @@ module.exports = scheduleJob('* * */1 * * *', async () => {
     res.on('end', () => {
       let data = Buffer.concat(chunks, size)
       let html = data.toString()
+
+
       let $ = cheerio.load(html)
 
       $('.note-list > li').each(async (index, note) => {
         let title = $(note).find('.title').text();
         let href = $(note).find('.title').attr('href');
-
         let JianShu = await JianShuService.findByAttribute({href: pageAddress + href})
-
-        if(!JianShu){
+        if(JianShu.length === 0){
           logger.info(`Task : ${title} => ${pageAddress + href}`)
-
           pool.post(type ,{
             address: pageAddress + href,
             combine: JianShuHandler,

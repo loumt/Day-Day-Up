@@ -18,6 +18,16 @@ let JianShu = sequlize.define(modelProp.name, {
     allowNull: true,
     comment: '标题'
   },
+    author: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: true,
+        comment: '作者'
+    },
+    description: {
+        type: Sequelize.DataTypes.TEXT,
+        allowNull: true,
+        comment: '描述'
+    },
   href: {
     type: Sequelize.DataTypes.STRING,
     allowNull: true,

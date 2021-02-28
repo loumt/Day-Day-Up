@@ -9,7 +9,7 @@ const pageAddress = 'https://s.weibo.com/top/summary?cate=realtimehot'
 const type = 'ReSou'
 
 
-module.exports = scheduleJob('* * */6 * * *', async () => {
+module.exports = scheduleJob('0 0 12 * * *', async () => {
   //直接
   // https.get(pageAddress, res => {
   //   let chunks = []

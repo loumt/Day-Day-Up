@@ -18,7 +18,7 @@ let interceptors = {
 
 
 let instance = axios.create({
-  baseURL: 'http://192.168.20.116:5000',
+  baseURL: 'http://127.0.0.1:5000',
   timeout: 3000
 })
 

@@ -4,6 +4,6 @@ module.exports = {
 
   //Sub
   JianShuSchedule: require('./schedule/JianShuSchedule'),
-  ReSouSchedule: require('./schedule/ResouSchedule')
+  // ReSouSchedule: require('./schedule/ResouSchedule')
 
 }
